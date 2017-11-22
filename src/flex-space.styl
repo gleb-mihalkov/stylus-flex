@@ -1,0 +1,17 @@
+// Sets horizontal space between items.
+flex-space($args...)
+
+  for $value in $args
+    $scalar = unit($value, '')
+    $units = unit($value)
+    
+    if $units == '%'
+      $units = 'per'
+    
+    &&--space-{$units}-{$scalar}
+      margin-left ($value / -2)
+      margin-right ($value / -2)
+      
+      & > ^[0]__item
+        padding-left ($value / 2)
+        padding-right ($value / 2)

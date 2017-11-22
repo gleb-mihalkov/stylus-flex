@@ -1,0 +1,122 @@
+// Mixins.
+@import 'flex-columns'
+@import 'flex-space'
+@import 'flex-v-space'
+
+// Styles.
+.flex
+  display flex
+  
+  &--vertical
+    flex-direction column
+    
+  &--wrap
+    flex-wrap wrap
+  
+  &--align
+    
+    &-left
+    &-top
+      justify-content flex-start
+    
+    &-right
+    &-bottom
+      justify-content flex-end
+    
+    &-center
+      justify-content center
+    
+    &-between
+      justify-content space-between
+    
+    &-around
+      justify-content space-around
+      
+  &--v-align
+    
+    &-left
+    &-top
+      align-items flex-start
+    
+    &-right
+    &-bottom
+      align-items flex-end
+    
+    &-center
+      align-items center
+    
+    &-stretch
+      align-items stretch
+      
+    &-baseline
+      align-items baseline
+      
+  &--w-align
+    
+    &-left
+    &-top
+      align-content flex-start
+    
+    &-right
+    &-bottom
+      align-content flex-end
+    
+    &-center
+      align-content center
+    
+    &-between
+      align-content space-between
+    
+    &-around
+      align-content space-around
+      
+    &-stretch
+      align-content stretch
+  
+  &__item
+    
+    &--align
+      
+      &-top
+        align-self flex-start
+      
+      &-bottom
+        align-self flex-end
+      
+      &-center
+        align-self center
+      
+      &-stretch
+        align-self stretch
+      
+      &-baseline
+        align-self baseline
+        
+    &--size
+      
+      &-grow
+        flex 1 0 auto
+        
+      &-shrink
+        flex 0 1 auto
+        
+      &-auto
+        flex 1 1 auto
+        
+    &--pulled
+      
+      &-right
+        margin-left auto !important
+        
+      &-left
+        margin-right auto !important
+        
+      &-center
+        margin-left auto !important
+        margin-right auto !important
+        
+      &-top
+        margin-bottom auto !important
+        
+      &-bottom
+        margin-top auto !important
