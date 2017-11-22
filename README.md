@@ -48,7 +48,7 @@ bower install --save https://github.com/gleb-mihalkov/stylus-flex.git
 
 #### .flex__item
 
-*Элемент flexbox блока.*
+Элемент flexbox блока.
 
 * *--align-[top|left|bottom|right|center|stretch|baseline]* - Расположение элемента по вертикальной оси.
 
